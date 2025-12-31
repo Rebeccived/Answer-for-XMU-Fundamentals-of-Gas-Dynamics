@@ -18,7 +18,7 @@ def fanno_ratios(M, gamma=1.4):
     ratios['p/p*'] = 1/M * ((gamma+1)/2 / (1 + (gamma-1)/2 * M**2))**0.5
     ratios['pₜ/pₜ*'] = 1/M * ((1 + (gamma-1)/2 * M**2)/((gamma+1)/2))**((gamma+1)/(2*(gamma-1)))
     ratios['fL/D'] = (gamma+1)/(2*gamma) * np.log(((gamma+1)/2 * M**2)/(1 + (gamma-1)/2 * M**2)) + 1/gamma * (1/M**2 - 1)
-    ratios['Sₘₐₓ/ᵣ'] = np.log(1/M * ((1 + (gamma-1)/2 * M**2)/(1 + (gamma-1)/2))**((gamma+1)/(2*(gamma-1))))
+    ratios['Sₘₐₓ/R'] = np.log(1/M * ((1 + (gamma-1)/2 * M**2)/(1 + (gamma-1)/2))**((gamma+1)/(2*(gamma-1))))
     ratios['V/V*'] = M * np.sqrt((gamma+1)/(2 + (gamma-1)*M**2))
     return ratios
 
